@@ -25,7 +25,7 @@ buttons.forEach(button => {
                 playerScore.textContent = `${playerCount}`
                 computerCount = 0; 
                 computerScore.textContent = `${computerCount}`;
-                resultText.textContent = `YOU WIN THE MATCH click an option to rematch...`;
+                resultText.textContent = `YOU HAVE WON THE MATCH click an option to rematch...`;
             }
 
         }
@@ -37,7 +37,7 @@ buttons.forEach(button => {
                 playerScore.textContent = `${playerCount}`
                 computerCount = 0; 
                 computerScore.textContent = `${computerCount}`;
-                resultText.textContent = `YOU LOOSE THE MATCH, click an option to rematch...`;
+                resultText.textContent = `YOU HAVE LOST THE MATCH, click an option to rematch...`;
             }
         }
         else {
@@ -66,14 +66,14 @@ function playRound(playerSelection, computerSelection) {
     computerSelection = computerSelection.toLowerCase();
     //Tie cases
     if (playerSelection === computerSelection) {
-        return "Its a Tie";
+        return "Its a Tie.";
     }
     // player win cases
     else if (((playerSelection === 'rock') && (computerSelection === 'scissors')) || ((playerSelection === 'paper') && (computerSelection === 'rock')) || ((playerSelection === 'scissors') && (computerSelection === 'paper'))) {
         return `You win! ${playerSelection} beats ${computerSelection}.`;
     }
     else {
-        return `You loose! ${computerSelection} beats ${playerSelection}`;
+        return `You loose! ${computerSelection} beats ${playerSelection}.`;
     }
 }
 

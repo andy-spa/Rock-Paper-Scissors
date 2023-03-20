@@ -1,15 +1,17 @@
 *{
+    color: white;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #app{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(120, 30, 30);
 }
 #results{
     display: grid;
@@ -30,13 +32,6 @@
     border-bottom: 1px solid #ddd;
 }
 
-.teamNameOne{
-    color: rgb(50, 144, 22);
-}
-
-.teamNameTwo{
-    color: rgb(110, 40, 176);
-}
 
 #controls{
     display: flex;
@@ -46,23 +41,28 @@
     gap: 5px;
 }
 .controlsButton{
+    color: rgb(120, 30, 30);
     height: 100px;
     width: 100px;
     flex-grow: 1;
     border: none;
-    background-color: #eee;
+    background-color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 15px;
     
 }
-
+.controlsButton p{
+    color: rgb(120, 30, 30);
+}
 .controlsButton:hover{
     background-color: #ddd;
 }
 .controlsButton:active{
     background-color: #ccc;
 }
-
+.emoji.scissors{
+    font-size: 35px;
+}
 .resultText{
     grid-column: -3 / -1;
     font-size: 20px;
@@ -71,11 +71,19 @@
 }
 
 .emoji{
+    height: 40%;
     font-size: 30px;
 }
 
-h1{
+header{
+    width: 100%;
+    height: 10vh;
     font-size: 30px;
     padding: 20px;
     font-weight: 700;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(120, 30, 30);
 }
+
+

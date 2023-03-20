@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#results{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 300px;
+}
+
+.teamName,
+.score {
+    font-size: 20px;
+    padding: 20px;
+
+    text-align: center;
+}
+
+.teamName{
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.teamNameOne{
+    color: rgb(50, 144, 22);
+}
+
+.teamNameTwo{
+    color: rgb(110, 40, 176);
+}
+
+#controls{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+.controlsButton{
+    height: 100px;
+    width: 100px;
+    flex-grow: 1;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+
+.controlsButton:hover{
+    background-color: #ddd;
+}
+.controlsButton:active{
+    background-color: #ccc;
+}
+
+.resultText{
+    grid-column: -3 / -1;
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+}
+
+.emoji{
+    font-size: 30px;
+}
+
+h1{
+    font-size: 30px;
+    padding: 20px;
+    font-weight: 700;
+}

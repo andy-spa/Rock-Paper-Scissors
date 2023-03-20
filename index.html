@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="scripts.js" defer type="module"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <script src="scripts.js"></script>
+  <div id="app">
+    <h1>ROCK PAPER & SCISSORS</h1>
+    <div id="controls">
+      <button class="controlsButton" id="rock">Rock<p class="emoji">&#9994</p></button>
+      <button class="controlsButton" id="paper">Paper<p class="emoji">&#9995</p></button>
+      <button class="controlsButton" id="scissors">Scissors<p class="emoji">&#9996</p></button>
+    </div>
+    <div id="results">
+      <div class="teamName teamNameOne">Player:</div>
+      <div class="teamName teamNameTwo">Computer:</div>
+      <div class="playerScore score"></div>
+      <div class="computerScore score"></div>
+      <div class="resultText"></div>
+    </div>
+  </div>
 </body>
+
 </html>

@@ -6,7 +6,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #app{
-    height: 90vh;
+    height: 93vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,9 +77,9 @@
 
 header{
     width: 100%;
-    height: 10vh;
-    font-size: 35px;
-    padding: 20px;
+    height: 7vh;
+    font-size: 30px;
+    padding: 10px;
     font-weight: 700;
     text-align: center;
     background-color: rgb(255, 255, 255);

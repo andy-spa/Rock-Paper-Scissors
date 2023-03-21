@@ -16,14 +16,13 @@
 #results{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 300px;
+    width: 400px;
 }
 
 .teamName,
 .score {
     font-size: 20px;
-    padding: 20px;
-
+    padding: 25px;
     text-align: center;
 }
 
@@ -35,15 +34,15 @@
 
 #controls{
     display: flex;
-    width: 300px;
+    width: 400px;
     justify-content: space-around;
     align-items: center;
     gap: 5px;
 }
 .controlsButton{
     color: rgb(120, 30, 30);
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
     flex-grow: 1;
     border: none;
     background-color: rgb(255, 255, 255);
@@ -61,7 +60,7 @@
     background-color: #ccc;
 }
 .emoji.scissors{
-    font-size: 35px;
+    font-size: 45px;
 }
 .resultText{
     grid-column: -3 / -1;
@@ -72,18 +71,21 @@
 
 .emoji{
     height: 40%;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 7vh;
-    font-size: 30px;
-    padding: 10px;
-    font-weight: 700;
-    text-align: center;
     background-color: rgb(255, 255, 255);
-    color: rgb(120, 30, 30);
+    
 }
 
+header h1{
+     color: rgb(120, 30, 30); 
+     font-size: 25px;
+}
 
